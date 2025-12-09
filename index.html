@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 13 – CSS</title>
+
+    <style>
+        :root {
+            --primary: #1f2f6b; /* màu xanh bạn chọn */
+            --bg: #f4f6ff;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--bg);
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 10px;
+            background: var(--primary);
+            color: white;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .container {
+            width: 85%;
+            margin: 25px auto;
+        }
+
+        .box {
+            background: white;
+            padding: 22px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: var(--primary);
+        }
+
+        h3 {
+            margin-top: 15px;
+            color: #444;
+        }
+
+        ul li {
+            margin: 6px 0;
+        }
+
+        a {
+            color: #007bff;
+        }
+
+        .title {
+            text-align: center;
+            color: var(--primary);
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>BÀI 13 – CSS</h1>
+        <p class="subtitle">Tổng hợp lý thuyết – luyện tập – vận dụng</p>
+    </header>
+
+    <main class="container">
+
+        <section class="box">
+            <h2>Luyện tập 1</h2>
+            <p><b>Câu hỏi:</b> Khẳng định “Ngôn ngữ định dạng CSS chính là ngôn ngữ HTML” là đúng hay sai? </p>
+
+            <h3>Lời giải:</h3>
+            <p><b>Sai.</b> CSS không phải HTML.  
+            HTML tạo cấu trúc nội dung, còn CSS điều chỉnh giao diện (màu sắc, font, bố cục...).  
+            CSS là ngôn ngữ độc lập hoạt động cùng HTML.</p>
+        </section>
+
+        <section class="box">
+            <h2>Luyện tập 2</h2>
+            <p><b>Câu hỏi:</b> “Chỉ cần thay đổi tệp CSS là có thể thay đổi định dạng nhiều trang web” đúng hay sai?</p>
+
+            <h3>Lời giải:</h3>
+            <p><b>Đúng.</b> Một file CSS có thể áp dụng cho nhiều trang web.  
+            Khi chỉnh file CSS → toàn bộ giao diện trang dùng nó sẽ thay đổi.</p>
+        </section>
+
+        <section class="box">
+            <h2>Vận dụng 1</h2>
+            <p><b>Câu hỏi:</b> Nêu sự giống nhau giữa Style Sheet trong phần mềm soạn văn bản và CSS của trang web.</p>
+
+            <h3>Lời giải:</h3>
+            <ul>
+                <li><b>Cấu trúc – cú pháp:</b> Đều tuân theo quy tắc định dạng rõ ràng.</li>
+                <li><b>Tính tái sử dụng:</b> Dùng cho nhiều đoạn / nhiều phần tử.</li>
+                <li><b>Khuôn mẫu định dạng:</b> Tạo style cho tiêu đề, đoạn văn, danh sách…</li>
+                <li><b>Kiểm soát phong cách:</b> Điều chỉnh màu, cỡ chữ, khoảng cách…</li>
+            </ul>
+        </section>
+
+        <section class="box">
+            <h2>Vận dụng 2 – Lịch sử CSS</h2>
+
+            <h3 class="title">Lịch sử CSS</h3>
+
+            <p>Ý tưởng CSS do Hakon Wium Lie (Na Uy) đề xuất năm 1994 khi làm việc với Tim Berners-Lee tại CERN.</p>
+
+            <p>Mục tiêu của CSS là tạo ra một ngôn ngữ định dạng riêng, tách biệt hoàn toàn khỏi cấu trúc HTML.</p>
+
+            <h3>Lịch sử các phiên bản CSS đầu tiên</h3>
+            <p>• CSS1 ra đời năm 1996.</p>
+            <p>• CSS2 hoàn thành năm 1998, bản cập nhật hoàn thiện nhất là CSS2.1 (2011 — nâng cấp 2016).</p>
+
+            <h3>Các phiên bản CSS tiếp theo</h3>
+            <p>Từ CSS3 trở đi, ngôn ngữ được phát triển theo từng module riêng.  
+            Một số chuẩn CSS4, CSS5 hiện vẫn đang phát triển.</p>
+
+            <p>Chuẩn web (HTML, CSS…) do W3C phát triển:  
+                <a href="http://www.w3.org/" target="_blank">www.w3.org</a>
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>
